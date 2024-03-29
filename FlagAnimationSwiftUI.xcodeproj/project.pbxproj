@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		3A00F0882BB5613700CFD3F5 /* FlagAnimationSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A00F0872BB5613700CFD3F5 /* FlagAnimationSwiftUIApp.swift */; };
-		3A00F08A2BB5613700CFD3F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A00F0892BB5613700CFD3F5 /* ContentView.swift */; };
+		3A00F08A2BB5613700CFD3F5 /* FlagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A00F0892BB5613700CFD3F5 /* FlagsView.swift */; };
 		3A00F08C2BB5613900CFD3F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A00F08B2BB5613900CFD3F5 /* Assets.xcassets */; };
 		3A00F08F2BB5613900CFD3F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A00F08E2BB5613900CFD3F5 /* Preview Assets.xcassets */; };
+		3A51924F2BB69DDC009A75ED /* FlagsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A51924E2BB69DDC009A75ED /* FlagsModel.swift */; };
+		3A5192522BB69DFA009A75ED /* FlagsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5192512BB69DFA009A75ED /* FlagsViewModel.swift */; };
+		3A5192542BB69F9C009A75ED /* ScrollViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5192532BB69F9C009A75ED /* ScrollViewWrapper.swift */; };
+		3A5192572BB69FF5009A75ED /* ScrollViewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5192562BB69FF5009A75ED /* ScrollViewContent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3A00F0842BB5613700CFD3F5 /* FlagAnimationSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlagAnimationSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A00F0872BB5613700CFD3F5 /* FlagAnimationSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagAnimationSwiftUIApp.swift; sourceTree = "<group>"; };
-		3A00F0892BB5613700CFD3F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3A00F0892BB5613700CFD3F5 /* FlagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagsView.swift; sourceTree = "<group>"; };
 		3A00F08B2BB5613900CFD3F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A00F08E2BB5613900CFD3F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3A51924E2BB69DDC009A75ED /* FlagsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagsModel.swift; sourceTree = "<group>"; };
+		3A5192512BB69DFA009A75ED /* FlagsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagsViewModel.swift; sourceTree = "<group>"; };
+		3A5192532BB69F9C009A75ED /* ScrollViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewWrapper.swift; sourceTree = "<group>"; };
+		3A5192562BB69FF5009A75ED /* ScrollViewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewContent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				3A00F0872BB5613700CFD3F5 /* FlagAnimationSwiftUIApp.swift */,
-				3A00F0892BB5613700CFD3F5 /* ContentView.swift */,
+				3A5192552BB69FAD009A75ED /* UIElements */,
+				3A5192502BB69DE2009A75ED /* FlagsViewScreen */,
 				3A00F08B2BB5613900CFD3F5 /* Assets.xcassets */,
 				3A00F08D2BB5613900CFD3F5 /* Preview Content */,
 			);
@@ -65,6 +74,25 @@
 				3A00F08E2BB5613900CFD3F5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3A5192502BB69DE2009A75ED /* FlagsViewScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3A51924E2BB69DDC009A75ED /* FlagsModel.swift */,
+				3A00F0892BB5613700CFD3F5 /* FlagsView.swift */,
+				3A5192512BB69DFA009A75ED /* FlagsViewModel.swift */,
+			);
+			path = FlagsViewScreen;
+			sourceTree = "<group>";
+		};
+		3A5192552BB69FAD009A75ED /* UIElements */ = {
+			isa = PBXGroup;
+			children = (
+				3A5192532BB69F9C009A75ED /* ScrollViewWrapper.swift */,
+				3A5192562BB69FF5009A75ED /* ScrollViewContent.swift */,
+			);
+			path = UIElements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +165,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A00F08A2BB5613700CFD3F5 /* ContentView.swift in Sources */,
+				3A5192522BB69DFA009A75ED /* FlagsViewModel.swift in Sources */,
+				3A5192572BB69FF5009A75ED /* ScrollViewContent.swift in Sources */,
+				3A51924F2BB69DDC009A75ED /* FlagsModel.swift in Sources */,
+				3A00F08A2BB5613700CFD3F5 /* FlagsView.swift in Sources */,
+				3A5192542BB69F9C009A75ED /* ScrollViewWrapper.swift in Sources */,
 				3A00F0882BB5613700CFD3F5 /* FlagAnimationSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
