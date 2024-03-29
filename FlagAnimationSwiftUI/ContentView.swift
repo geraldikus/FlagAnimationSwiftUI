@@ -79,6 +79,7 @@ struct ScrollViewContent: View {
                     .frame(width: 90, height: 90)
                     .id(index)
             }
+            .padding(.bottom, 2)
         }
     }
 }
